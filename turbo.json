@@ -1,6 +1,8 @@
 {
   "pipeline": {
-    "build": {},
+    "build": {
+     "dependsOn": ["^build"]
+    },
     "crew#build": {
       "outputs": [
         ".next/**"
